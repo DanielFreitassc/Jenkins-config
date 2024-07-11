@@ -36,6 +36,18 @@ docker pull jenkins/jenkins
 ```yml
 docker run -dti -p 8085:8080  --name jenkins jenkins/jenkins
 ```
+### Agora va no nevegadore procure pelo Hostname da maquina exemplo : http://192.168.0.1:8085/
+obs coloque a porta que vc escolheu no nosso caso foi 8085
+
+### Agora vc precisara ir na VPS que esta rodando o jenkins e rodar o comando
+```yml
+docker ps
+```
+### copie o Container ID e digite 
+```yml
+docker logs [container ID]
+```
+copie a senha que aparecera é e cole no navegador
 escrevendo ...
 
 
