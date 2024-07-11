@@ -198,6 +198,19 @@ cat id_rsa
 ```yml
 docker ps
 ```
-E pronto configurações basicas feitas 
+# Clique no build feito
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/96b0035d-a857-49ef-b144-f7da1b0e0e56)
+
+# Clique em saida do console
+
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/f6fbe183-2526-456c-9d49-01d5fbbd343b)
+
+
+
+A saida do console dever sera algo assim
+
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/0dfd9acd-326e-4df1-908b-b50214e9086a)
+
+E pronto configurações basicas feitas  basta colocar os comandos que você ja faz para rodar eles de forma automatica toda vez que você commitrar algo no github
 
 
