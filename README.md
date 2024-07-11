@@ -89,6 +89,10 @@ wget https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.deb
 ```yml
 dpkg -i jdk-22_linux-x64_bin.deb
 ```
+## Verifique se o java foi instalado
+```yml
+java --version
+```
 ## Agora crie um usuário para o jenkins 
 ```yml
 sudo adduser jenkins
