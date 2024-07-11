@@ -97,6 +97,8 @@ java --version
 ```yml
 sudo adduser jenkins
 ```
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/a201afdf-7a81-483b-b9cd-e4635b9f290f)
+
 ## Adicione a permissão do jenkins para que ele possar usar docker sem sudo 
 ```yml
 sudo usermod -aG docker jenkins
@@ -108,10 +110,43 @@ sudo usermod -aG docker jenkins
 ```yml
 su - jenkins
 ```
-![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/a201afdf-7a81-483b-b9cd-e4635b9f290f)
+## Agora iremos criar um chave SSH para acessar a VPS 
+```yml
+ssh-keygen -t rsa -b 4096 -C "jenkins"
+```
+de enter para salvar a chave no direotiro padrão ./ssh
+insira uma senha ou deixe em branco dando enter 
 
-## Acesse sua VPS onde ira o agente e crie uma chave SSH com o comando abaixo 
+## Entre no diretorio onde foi salvo a chave SSH
+```yml
+cd .ssh/
+```
 
+## Autorize a chave OBS: Tem que estar no diretorio com a chave
+```yml
+cat id_rsa.pub >> authorized_keys
+```
+## Copie a chave privada iremos voltar para a configuração no painel do jenkins
+```yml
+cat id_rsa
+```
+
+
+## No jekins na parte de Credentials clique em Add e escolha o jenkins
+
+## Escolha SSH username whith private key
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/790d270c-f233-4407-81a8-fa814de0d3f0)
+
+# Agora coloque um ID para indentificar sua chave  e um descrição tbm 
+# O username é o que criamos jenkins
+# Private key é aquela que pedimos pra você copiar >> cat id_rsa
+# Passphrase coloque sua senha ou deixe em branco caso sua chave ssh n tenha senha de acesso
+
+
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/e66c58a5-5f65-4490-b888-135e0754a3b6)
+
+# Em Host Key Verification Strategy pode colocar Non verification Strategy e salvar 
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/b135985c-ece0-4bff-84be-807a8a405508)
 
 ![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/7821ed7d-c597-4549-b3f1-e4660264a37d)
 
