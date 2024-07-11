@@ -80,8 +80,16 @@ obs para conseguir o host é só ir na vps que rodara seu codigo e digite
 ```yml
 hostname -i
 ```
-## agora iremos criar um usuario jenkins e nossa credencial para acessar a VPS que será via SSH 
-## Primeiro crie um usuário para o jenkins 
+## agora iremos configurar o abiente do agente e criar um usuario jenkins e nossa credencial para acessar a VPS que será via SSH 
+## Primeiro instale o java para o agente do jenkins poder rodar [LINK](https://www.oracle.com/br/java/technologies/downloads/) 
+```yml
+wget https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.deb 
+```
+## Agora instale o java com o comando abaixo
+```yml
+dpkg -i jdk-22_linux-x64_bin.deb
+```
+## Agora crie um usuário para o jenkins 
 ```yml
 sudo adduser jenkins
 ```
