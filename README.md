@@ -80,6 +80,8 @@ obs para conseguir o host é só ir na vps que rodara seu codigo e digite
 ```yml
 hostname -i
 ```
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/7821ed7d-c597-4549-b3f1-e4660264a37d)
+
 ## agora iremos configurar o abiente do agente e criar um usuario jenkins e nossa credencial para acessar a VPS que será via SSH 
 ## Primeiro baixe o pacote de instalação do java para o agente do jenkins poder rodar [LINK](https://www.oracle.com/br/java/technologies/downloads/) 
 ```yml
@@ -150,7 +152,7 @@ cat id_rsa
 # Em Host Key Verification Strategy pode colocar Non verification Strategy e salvar 
 ![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/b135985c-ece0-4bff-84be-807a8a405508)
 
-![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/7821ed7d-c597-4549-b3f1-e4660264a37d)
+
 
 # Agora iremos configurar uma tarefa
 # No painel de controler do jenkins escolhar nova tarefa
@@ -165,7 +167,7 @@ cat id_rsa
 
 
 # Abaixo marque a opção Restringe onde este projeto pode ser executado
-
+Bote o nome que foi definido no rótulo do nó quando criamos nos passos anteriores
 ![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/8a6b122a-e29c-45d5-a00a-dda6b163657e)
 
 # Agora em Gerenciamento de código fonte marque o git como opção
