@@ -36,7 +36,7 @@ docker pull jenkins/jenkins
 ```yml
 docker run -dti -p 8085:8080  --name jenkins jenkins/jenkins
 ```
-### Agora va no nevegadore procure pelo Hostname da maquina exemplo : http://192.168.0.1:8085/
+### Agora va no nevegador procure pelo Hostname da maquina exemplo : http://192.168.0.1:8085/
 obs coloque a porta que vc escolheu no nosso caso foi 8085
 
 ### Agora vc precisara ir na VPS que esta rodando o jenkins e rodar o comando
@@ -81,7 +81,7 @@ obs para conseguir o host é só ir na vps que rodara seu codigo e digite
 hostname -i
 ```
 ## agora iremos configurar o abiente do agente e criar um usuario jenkins e nossa credencial para acessar a VPS que será via SSH 
-## Primeiro instale o java para o agente do jenkins poder rodar [LINK](https://www.oracle.com/br/java/technologies/downloads/) 
+## Primeiro baixe o pacote de instalação do java para o agente do jenkins poder rodar [LINK](https://www.oracle.com/br/java/technologies/downloads/) 
 ```yml
 wget https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.deb 
 ```
@@ -104,7 +104,9 @@ sudo adduser jenkins
 sudo usermod -aG docker jenkins
 ```
 ## Agora reinicie sua VPS para aplicar a permissão dada ao jenkins 
-
+```yml
+reboot
+```
 ## Apos sua vps reiniciar logue com seu usuário jenkins que acabamos de criar ou logue como root e troque para o jenkins
 
 ```yml
