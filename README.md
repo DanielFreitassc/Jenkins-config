@@ -91,7 +91,7 @@ sudo usermod -aG docker jenkins
 ```
 ## Agora reinicie sua VPS para aplicar a permissão dada ao jenkins 
 
-## Apos sua vps reiniciar Troque para o usuário jenkins  
+## Apos sua vps reiniciar logue com seu usuário jenkins que acabamos de criar ou logue como root e troque para o jenkins
 
 ```yml
 su - jenkins
