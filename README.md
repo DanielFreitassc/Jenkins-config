@@ -1,12 +1,12 @@
 # Guia básico de como configurar o Jenkins para automatizar processos de deploy
 
-## Primeiro, iremos configurar o ambiente. Usaremos 2 VPS com Linux Ubuntu: uma VPS rodará o Jenkins e a outra rodará um Agent.
+### Primeiro, iremos configurar o ambiente. Usaremos 2 VPS com Linux Ubuntu: uma VPS rodará o Jenkins e a outra rodará um Agent.
 
 ### Vamos começar configurando a VPS
 
 ### Instale o Docker na suas duas VPS iremos precisar, Em caso de duvidas consulte >>  [LINK](https://docs.docker.com/engine/install/ubuntu/)
 
-```yml
+```bash
 # Adicionar a chave GPG oficial do Docker:
 sudo apt-get update
 sudo apt-get install ca-certificates curl
@@ -37,7 +37,9 @@ docker pull jenkins/jenkins
 docker run -dti -p 8085:8080  --name jenkins jenkins/jenkins
 ```
 ### Agora va no nevegador procure pelo Hostname da maquina exemplo : http://192.168.0.1:8085/
-obs coloque a porta que vc escolheu no nosso caso foi 8085
+
+> [!NOTE]
+> Obs coloque a porta que vc escolheu no nosso caso foi 8085
 
 ### Agora vc precisara ir na VPS que esta rodando o jenkins e rodar o comando
 ```yml
@@ -91,7 +93,9 @@ wget https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.deb
 ```yml
 dpkg -i jdk-22_linux-x64_bin.deb
 ```
-## Verifique se o java foi instalado
+
+> [!TIP]
+> Verifique se o java foi instalado
 ```yml
 java --version
 ```
@@ -126,10 +130,15 @@ insira uma senha ou deixe em branco dando enter
 cd .ssh/
 ```
 
-## Autorize a chave OBS: Tem que estar no diretorio com a chave
+## Autorize a chave
+
+> [!CAUTION] 
+> OBS: Tem que estar no diretorio com a chave
+
 ```yml
 cat id_rsa.pub >> authorized_keys
 ```
+
 ## Copie a chave privada iremos voltar para a configuração no painel do jenkins
 ```yml
 cat id_rsa
