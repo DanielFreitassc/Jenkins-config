@@ -150,9 +150,34 @@ cat id_rsa
 
 ![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/7821ed7d-c597-4549-b3f1-e4660264a37d)
 
+# Agora iremos configurar uma tarefa
+# No painel de controler do jenkins escolhar nova tarefa
+
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/2d7942d8-f296-45b2-8ff3-ed2e9688a36f)
+# Insira um nome para a tarefa e escolha software de estilo livre
+
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/68780c67-4ebd-4dca-8563-31581f54e6c6)
+
+# Insira um descriçãpo e coloque a url do navegado que leva até o seu repositorio
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/cd5bf63f-d8e0-40d2-8a1c-34fa1a3749a6)
 
 
-                                      
+# Abaixo marque a opção Restringe onde este projeto pode ser executado
+
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/8a6b122a-e29c-45d5-a00a-dda6b163657e)
+
+# Agora em Gerenciamento de código fonte marque o git como opção
+# Coloque o link para clonagem do seu repositoro se ele for public não precisa inserir senha se ele necessitar de senha você tera que ir até o github e gerar uma chave gpc
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/337c5aba-b721-47ff-9eb8-2f31dbd8a2e6)
+
+# Agora crie uma nova chave username é o nome do seu git e a senha é a chave gpc que vc criou no github lembre de colocar um id e um rotulo pra indentificar que chave é esta que você criou
+
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/cdba202a-3cec-4d40-a7bd-e53de166d066)
+
+
+
+
+
   escrevendo ...                        
         
         
