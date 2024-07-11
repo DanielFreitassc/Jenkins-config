@@ -175,14 +175,29 @@ cat id_rsa
 ![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/cdba202a-3cec-4d40-a7bd-e53de166d066)
 
 
+# Defina a branch em que sera feito um scanner procurando atualizações no nosso caso será a */main
 
 
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/8e7c0451-547f-4d8c-a58e-6b2250896fae)
 
-  escrevendo ...                        
-        
-        
-                                                                      
-                
-                  
-          
-        
+
+# Em Gatilho de disparo para construções marque >> Consultar periodicamente o SCM 
+# Insira os caracteres abaixo para pedir para verificar a cada 1 minuto
+```yml
+* * * * *
+```
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/cc1613bc-4613-414f-84a1-c426a39fe672)
+
+# Agora em Ambiente de construção marque a opção SSH Agent e escolha a chave ssh que criamos anteriormente para o nó
+
+![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/060ed7e4-a947-4aa3-ba7e-8c35d3db2175)
+
+# Em Passos de construção  adicone uma passso Executar shell
+# Agora você pode passar uma lista de comando esritas em shell para que a cada nova atualização no github na branch main ele execute esse shell 
+# coloque o comando abaixo e salva para testar
+```yml
+docker ps
+```
+E pronto configurações basicas feitas 
+
+
