@@ -244,4 +244,3 @@ docker ps
 
 E pronto configurações basicas feitas  basta colocar os comandos que você já faz para rodar eles de forma automatica toda vez que você commitar algo no github.
 
-
