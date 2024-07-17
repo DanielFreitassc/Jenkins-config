@@ -5,6 +5,10 @@
 ### Vamos começar configurando a VPS
 
 ### Instale o Docker na suas duas VPS iremos precisar, Em caso de duvidas consulte >>  [LINK](https://docs.docker.com/engine/install/ubuntu/)
+```yml
+sudo apt update & apt upgrade -y
+```
+
 
 ```markdown
 # Adicionar a chave GPG oficial do Docker:
