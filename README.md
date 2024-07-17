@@ -9,6 +9,12 @@
 sudo apt update & apt upgrade -y
 ```
 
+### Execute o seguinte comando para desinstalar todos os pacotes conflitantes:
+```markdown
+for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+```
+
+### Configure apto repositório do Docker.
 
 ```markdown
 # Adicionar a chave GPG oficial do Docker:
@@ -24,6 +30,11 @@ echo \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
+```
+
+### Instale os pacotes do Docker.
+```markdown
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 --- 
 
