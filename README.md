@@ -69,10 +69,7 @@ docker logs [container ID]
 ```
 > [!NOTE]
 > copie a senha que aparecera e cole a mesma no navegador
----
-# Instalaremos alguns plugins 
-- SSH Agent Plugin
-                          
+                 
 ---
 
 # Agora iremos em configurações siga os passos abaixo 
