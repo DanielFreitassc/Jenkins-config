@@ -256,4 +256,3 @@ docker ps
 ![image](https://github.com/DanielFreitassc/Jenkins-config/assets/129224303/0dfd9acd-326e-4df1-908b-b50214e9086a)
 
 E pronto configurações basicas feitas  basta colocar os comandos que você já faz para rodar eles de forma automatica toda vez que você commitar algo no github.
-
